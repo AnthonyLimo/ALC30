@@ -6,7 +6,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.anthonykiplimo.alc30.MainActivity">
 
-    <include layout="@layout/app_bar_layout" android:id="@+id/main_page_toolbar"/>
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/app_bar_layout"
+        android:layout_height="59dp" />
 
     <TextView
         android:layout_width="wrap_content"
