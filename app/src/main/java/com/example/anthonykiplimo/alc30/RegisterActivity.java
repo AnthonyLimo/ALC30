@@ -43,11 +43,12 @@ public class RegisterActivity extends AppCompatActivity {
                 String username = mRegUsername.getEditableText().toString();
                 String email = mRegEmail.getEditableText().toString();
                 String password = mRegPassword.getEditableText().toString();
-
                 register_user(username, email, password);
             }
         });
     }
+
+    //register user function with firebase
 
     private void register_user(String username, String email, String password) {
        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
